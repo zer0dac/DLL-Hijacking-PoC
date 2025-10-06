@@ -9,6 +9,6 @@ DLL hijacking and DLL side loading are techniques that rely on how Windows resol
 
 # Usage 
 
-x86_64-w64-mingw32-gcc -I/usr/x86_64-w64-mingw32/include -shared -o <file_name>.dll file_name>.c
+x86_64-w64-mingw32-gcc -I/usr/x86_64-w64-mingw32/include -shared -o <file_name>.dll <file_name>.c
 
 Then move malicious dll to correct path.
