@@ -17,7 +17,7 @@ Then move malicious dll to correct path.
 
 <dll_hijack_checker.c> — DLL hijack PoC: loads in place of a missing export and prints a simple message.
 
-<dll_hijack_command_execution> — Creates a user via cmd and assigns local admin privileges when loaded.
+<dll_hijack_command_execution.c> — Creates a user via cmd and assigns local admin privileges when loaded.
 
-<dll_hijack_loader> — Downloads an EXE from <remote_url> and uses PyinMemoryPE to execute it in memory (helper binary performs the in-memory run). (Ref: https://github.com/ELMERIKH/PyinMemoryPE)
+<dll_hijack_loader.c> — Downloads an EXE from <remote_url> and uses PyinMemoryPE to execute it in memory (helper binary performs the in-memory run). (Ref: https://github.com/ELMERIKH/PyinMemoryPE)
 
