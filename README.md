@@ -12,3 +12,12 @@ DLL hijacking and DLL side loading are techniques that rely on how Windows resol
 x86_64-w64-mingw32-gcc -I/usr/x86_64-w64-mingw32/include -shared -o <file_name>.dll <file_name>.c
 
 Then move malicious dll to correct path.
+
+# Three DLL PoCs:
+
+<dll_hijack_checker.c> — DLL hijack PoC: loads in place of a missing export and prints a simple message.
+
+<dll_hijack_command_execution> — Creates a user via cmd and assigns local admin privileges when loaded.
+
+<dll_hijack_loader> — Downloads an EXE from <remote_url> and uses PyinMemoryPE to execute it in memory (helper binary performs the in-memory run). (Ref: https://github.com/ELMERIKH/PyinMemoryPE)
+
